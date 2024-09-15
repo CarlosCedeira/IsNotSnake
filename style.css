@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'VT323', monospace;
+    background-color: #414141;
+  }
+  
+  .score-board {
+    background-color: #0c3003;
+    display: flex;
+  }
+
+  #game-board {
+    border-radius: 100px;
+    display: grid;
+    grid-template-columns: repeat(20, 20px);
+    grid-template-rows: repeat(20, 20px);
+    margin: 5px;
+  }
+  
+  .game-border-1 {
+    border: #595f43 solid 10px;
+    border-radius: 30px;
+    box-shadow: inset 0 0 0 10px #595f43;
+  }
+  
+  .game-border-2 {
+    border: #abb78a solid 8px;
+    border-radius: 26px;
+    box-shadow: inset 0 0 0 10px #abb78a;
+  }
+  
+  .game-border-3 {
+    border: #8b966c solid 30px;
+    border-radius: 20px;
+    box-shadow: inset 0 0 0 5px #8b966c;
+  }
+  
+  #instruction-text {
+    position: absolute;
+    top: 60%;
+    color: #333;
+    width: 300px;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 30px;
+    margin: 0;
+    z-index: 1;
+  }
+
+  .last-scores{
+    height: 300px;
+    width: 330px;
+    position: absolute;
+    left: 50px;
+    top: 134px;
+    background-color: #595f43;
+    text-align: center;
+    border-radius: 15px;
+    color: #abb78a;
+    border: 3px solid #abb78a;
+
+  }
+
+  .last-scores > h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 2px;
+    border-bottom: 3px solid #abb78a;
+    font-weight: bold;
+
+  }
+
+  ol {
+    margin: 0;
+    padding-left: 21px;
+    padding-right: 21px;
+    text-align: left;
+  }
+
+  li {
+    list-style-type: none;
+    display: flex;
+    font-weight: bold;
+  }
+
+  .score-name {
+    flex: 1; /* Esto hace que el nombre ocupe el espacio disponible */
+    text-align: left;
+  }
+  
+  .score-value {
+    text-align: right; /* Alinea el valor a la derecha */
+    white-space: nowrap; /* Evita que el valor se rompa en varias líneas */
+  }
+
+  #title {
+    color: #abb78a;
+  }
+
+  li{
+    font-size: x-large;
+  }
+  
+  .scores {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #score {
+    color: #abb78a;
+  }
+  
+  #score,
+  #highScore {
+    font-size: 40px;
+    font-weight: bolder;
+    margin: 10px 0;
+  }
+  
+  #highScore {
+    color: #d8ddca;
+    display: none;
+  }
+  
+  .game-border-3,
+  #logo {
+    background-color: #c4cfa3;
+  }
+  
+  .snake-head {
+    background-color: #859b0b;
+    border: #1c6908 3px solid; /* Borde sólido para la cabeza */
+  }
+  
+  .snake-body {
+    background-color: #1f7e08;
+    border: #859b0b 5px dotted;
+  }
+  
+  .snake-tail {
+    background-color: #207e08b7;
+
+    border: none; /* Sin borde para la cola */
+  }
+  
+  .food {
+    background-color: #912a2a;
+    border: #740909 5px solid;
+  }
+
+  .special-item.gold {
+    background-color: gold;
+    border: 2px solid orange;
+  }
+  
+  .special-item.purple {
+    background-color: purple;
+    border: 2px solid violet;
+  }
+  
+  
+  #logo {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    filter: blur(1px); /* Aplicar un efecto de blur con 5px */
+  }
+  
